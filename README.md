@@ -1,4 +1,4 @@
-# Timestamp Microservice
+# Timestamp API
 
 My project for the [Timestamp Microservice challenge](https://www.freecodecamp.org/challenges/timestamp-microservice) as part of the curriculum for the Back End Development Certification on [Free Code Camp](https://www.freecodecamp.org).
 
