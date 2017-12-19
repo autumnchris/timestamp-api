@@ -1,9 +1,10 @@
 {
   "name": "timestamp",
   "version": "1.0.0",
-  "description": "",
+  "description": "My project for the Timestamp Microservice challenge as part of the curriculum for the Back End Development Certification on Free Code Camp.",
   "main": "index.js",
   "scripts": {
+    "start": "node app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
