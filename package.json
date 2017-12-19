@@ -1,8 +1,8 @@
 {
-  "name": "timestamp",
+  "name": "timestamp-api",
   "version": "1.0.0",
   "description": "My project for the Timestamp Microservice challenge as part of the curriculum for the Back End Development Certification on Free Code Camp.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "node app",
     "test": "echo \"Error: no test specified\" && exit 1"
