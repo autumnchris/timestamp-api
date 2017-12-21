@@ -9,6 +9,16 @@ My project for the [Timestamp Microservice challenge](https://www.freecodecamp.o
 2. If it does, it returns both the Unix timestamp and the natural language form of that date.
 3. If it does not contain a date or Unix timestamp, it returns null for those properties.
 
+## Built With
+* [Express.js](https://expressjs.com)
+* [Moment.js](https://momentjs.com)
+* HTML
+* [Bootstrap](https://getbootstrap.com)
+
+## Demo
+
+View project demo at [https://autumnchris-timestamp-api.herokuapp.com](https://autumnchris-timestamp-api.herokuapp.com).
+
 ## Installation
 
 ```
