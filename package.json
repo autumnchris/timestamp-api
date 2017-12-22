@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/autumnchris/timestamp/issues"
   },
-  "homepage": "https://github.com/autumnchris/timestamp#readme",
+  "homepage": "https://autumnchris-timestamp-api.herokuapp.com",
   "dependencies": {
     "express": "^4.16.2",
     "moment": "^2.20.1"
