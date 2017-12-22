@@ -26,7 +26,10 @@ app.get('/:date', function(req, res) {
     }
   }
 
-  res.json({unix: unix, natural: natural});
+  res.json({
+    unix: unix,
+    natural: natural
+  });
 });
 
 app.listen(port, console.log('Server is listening at port ' + port + '.'));
