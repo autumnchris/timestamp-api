@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/autumnchris/timestamp.git"
+    "url": "git+https://github.com/autumnchris/timestamp-api.git"
   },
   "author": "autumnchris",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/autumnchris/timestamp/issues"
+    "url": "https://github.com/autumnchris/timestamp-api/issues"
   },
   "homepage": "https://autumnchris-timestamp-api.herokuapp.com",
   "dependencies": {
