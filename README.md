@@ -22,10 +22,10 @@ View project demo at [https://autumnchris-timestamp-api.herokuapp.com](https://a
 ## Installation
 
 ```
-git clone https://github.com/autumnchris/timestamp-api.git
-cd timestamp-api
-npm install
-npm start
+$ git clone https://github.com/autumnchris/timestamp-api.git
+$ cd timestamp-api
+$ npm install
+$ npm start
 ```
 
 Go to `http://localhost:3000`.
