@@ -1,10 +1,11 @@
+var path = require('path');
 var express = require('express');
 var moment = require('moment');
 
 var app = express();
 var port = process.env.PORT || 3000;
 
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/:date', function(req, res) {
   var date = req.params.date;
@@ -30,6 +31,10 @@ app.get('/:date', function(req, res) {
     unix: unix,
     natural: natural
   });
+});
+
+app.use(function(req, res) {
+  res.send('404: Page not found', 404);
 });
 
 app.listen(port, console.log('Server is listening at port ' + port + '.'));
