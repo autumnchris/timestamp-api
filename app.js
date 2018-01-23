@@ -34,7 +34,7 @@ app.get('/:date', function(req, res) {
 });
 
 app.use(function(req, res) {
-  req.status(404).sendFile(path.join(__dirname, 'public', '404.html'));
+  res.sendFile(path.join(__dirname, 'public', '404.html'), 404);
 });
 
 app.listen(port, console.log('Server is listening at port ' + port + '.'));
