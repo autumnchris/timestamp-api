@@ -34,7 +34,7 @@ app.get('/:date', function(req, res) {
 });
 
 app.use(function(req, res) {
-  res.send('404: Page not found', 404);
+  req.status(404).sendFile(path.join(__dirname, 'public', '404.html'));
 });
 
 app.listen(port, console.log('Server is listening at port ' + port + '.'));
