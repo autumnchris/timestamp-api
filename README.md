@@ -12,7 +12,7 @@ My project for the [Timestamp Microservice challenge](https://www.freecodecamp.o
 ## Built With
 * [Express.js](https://expressjs.com)
 * [Moment.js](https://momentjs.com)
-* HTML
+* HTML5
 * [Bootstrap](https://getbootstrap.com)
 
 ## Demo
