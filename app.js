@@ -1,16 +1,16 @@
-var path = require('path');
-var express = require('express');
-var moment = require('moment');
+const path = require('path');
+const express = require('express');
+const moment = require('moment');
 
-var app = express();
-var port = process.env.PORT || 3000;
+const app = express();
+const port = process.env.PORT || 3000;
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/:date', function(req, res) {
-  var date = req.params.date;
-  var unix;
-  var natural;
+app.get('/:date', (req, res) => {
+  const date = req.params.date;
+  const unix;
+  const natural;
 
   if (!isNaN(date)) {
     unix = Number(date);
@@ -28,13 +28,13 @@ app.get('/:date', function(req, res) {
   }
 
   res.json({
-    unix: unix,
-    natural: natural
+    unix,
+    natural
   });
 });
 
-app.use(function(req, res) {
+app.use((req, res) => {
   res.sendFile(path.join(__dirname, 'public', '404.html'), 404);
 });
 
-app.listen(port, console.log('Server is listening at port ' + port + '.'));
+app.listen(port, console.log(`Server is listening at port ${port}.`));
