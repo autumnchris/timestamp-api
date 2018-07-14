@@ -9,14 +9,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/:date', (req, res) => {
   const date = req.params.date;
-  const unix;
-  const natural;
+  let unix;
+  let natural;
 
   if (!isNaN(date)) {
     unix = Number(date);
     natural = moment.utc(unix * 1000).format('MMMM D, YYYY');
   }
   else {
+    
     if (moment.utc(date, 'MMMM D, YYYY').isValid()) {
       natural = date;
       unix = Number(moment.utc(natural, 'MMMM D, YYYY').format('X'));
