@@ -6,9 +6,9 @@ My project for the [Timestamp Microservice challenge](https://learn.freecodecamp
 
 ## Built With
 * [Express.js](https://expressjs.com)
-* [Moment.js](https://momentjs.com)
+* CSS3
 * HTML5
-* [Bootstrap](https://getbootstrap.com)
+* [Moment.js](https://momentjs.com)
 
 ## Demo
 
