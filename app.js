@@ -1,41 +1,46 @@
-const path = require('path');
 const express = require('express');
 const moment = require('moment');
 
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.get('/', (req, res) => {
+  res.sendFile(`${__dirname}/views/index.html`);
+});
 
-app.get('/:date', (req, res) => {
+app.use(express.static(`${__dirname}/public`));
+
+app.get('/api/timestamp/:date', (req, res) => {
   const date = req.params.date;
-  let unix;
-  let natural;
 
   if (!isNaN(date)) {
-    unix = Number(date);
-    natural = moment.utc(unix * 1000).format('MMMM D, YYYY');
+    res.json({
+      unix: new Date(parseInt(date)).getTime(),
+      utc: new Date(parseInt(date)).toUTCString()
+    });
+  }
+  else if (moment.utc(date, 'YYYY-M-D').isValid()) {
+    res.json({
+      unix: new Date(date).getTime(),
+      utc: new Date(date).toUTCString()
+    });
   }
   else {
-    
-    if (moment.utc(date, 'MMMM D, YYYY').isValid()) {
-      natural = date;
-      unix = Number(moment.utc(natural, 'MMMM D, YYYY').format('X'));
-    }
-    else {
-      unix = null;
-      natural = null;
-    }
+    res.json({
+      error: 'Invalid Date'
+    });
   }
+});
 
+app.get('/api/timestamp', (req, res) => {
   res.json({
-    unix,
-    natural
+    unix: new Date().getTime(),
+    utc: new Date().toUTCString()
   });
 });
 
 app.use((req, res) => {
-  res.sendFile(path.join(__dirname, 'public', '404.html'), 404);
+  res.sendFile(`${__dirname}/views/404.html`, 404);
 });
 
 app.listen(port, console.log(`Server is listening at port ${port}.`));
