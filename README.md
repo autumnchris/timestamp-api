@@ -13,7 +13,7 @@ My project for the [Timestamp Microservice challenge](https://learn.freecodecamp
 
 ## Demo
 
-View project demo at [https://autumnchris-timestamp-api.herokuapp.com](https://autumnchris-timestamp-api.herokuapp.com).
+View project demo at [https://autumnchris-timestamp.herokuapp.com](https://autumnchris-timestamp.herokuapp.com).
 
 ## Installation
 
