@@ -19,7 +19,7 @@ app.get('/api/timestamp/:date', (req, res) => {
       utc: new Date(parseInt(date)).toUTCString()
     });
   }
-  else if (moment.utc(date, 'YYYY-M-D').isValid()) {
+  else if (moment.utc(date, 'YYYY-M-D', true).isValid()) {
     res.json({
       unix: new Date(date).getTime(),
       utc: new Date(date).toUTCString()
