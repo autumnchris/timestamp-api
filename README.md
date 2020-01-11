@@ -6,8 +6,8 @@ My project for the [Timestamp Microservice challenge](https://learn.freecodecamp
 
 ## Built With
 * [Express.js](https://expressjs.com)
+* [EJS](https://ejs.co)
 * CSS3
-* HTML5
 * [Moment.js](https://momentjs.com)
 * [Google Fonts](https://fonts.google.com)
 
