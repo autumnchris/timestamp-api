@@ -4,27 +4,31 @@
   <body>
     <header>
       <h1>Timestamp API</h1>
-      <h2>Created by <a href="https://autumnbullard-portfolio.herokuapp.com" target="_blank">Autumn Bullard</a> &copy; <%= new Date().getFullYear(); %></h2>
+      <p>Created by <a href="https://autumnbullard-portfolio.herokuapp.com" target="_blank">Autumn Bullard</a> &copy; <%= new Date().getFullYear(); %></p>
+    </header>
+    <main>
       <p>My project for the <a href="https://learn.freecodecamp.org/apis-and-microservices/apis-and-microservices-projects/timestamp-microservice" target="_blank">Timestamp Microservice challenge</a> as part of the curriculum for the Apis and Microservices Certification on <a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a>.</p>
       <p>View the <a href="https://github.com/autumnchris/timestamp-api" target="_blank">source code</a> for this project.</p>
       <hr>
-    </header>
-    <main>
-      <h3>Example Usages</h3>
-      <h4>Get the Current Date</h4>
-      <p>To get data for the current date, go to the path:</p>
-<pre><code>/api/timestamp</code></pre>
-      <h4>Get Other Dates</h4>
-      <p>Alternatively, you can get data for other dates by adding a parameter of a natural language date or a unix timestamp to the path. Natural language dates must have <code>YYYY-MM-DD</code> formatting such as:</p>
-<pre><code>/api/timestamp/2018-10-31</code></pre>
-      <p>Unix timestamps must be a valid integer defined in milliseconds such as:</p>
-<pre><code>/api/timestamp/1540944000000</code></pre>
-      <h3>Example Output</h3>
-      <p>A successful output should return a unix timestamp and its corresponding UTC date.</p>
-<pre><code>{
+      <section>
+        <h2>Example Usages</h2>
+        <h3>Get the Current Date</h3>
+        <p>To get the data for the current date, go to the route:</p>
+        <pre><code>/api/timestamp</code></pre>
+        <h3>Get Other Dates</h3>
+        <p>To get the data for a specific date, add a parameter of a natural language date or a unix timestamp to the set route. Natural language dates must be written in <code>YYYY-MM-DD</code> formatting such as:</p>
+        <pre><code>/api/timestamp/2018-10-31</code></pre>
+        <p>Unix timestamps must be a valid set of numbers such as:</p>
+        <pre><code>/api/timestamp/1540944000000</code></pre>
+      </section>
+      <section>
+        <h2>Example Output</h2>
+        <p>A successful output should return a unix timestamp and its associated UTC date.</p>
+        <pre><samp>{
   "unix": 1540944000000,
   "utc": "Wed, 31 Oct 2018 00:00:00 GMT"
-}</code></pre>
+}</samp></pre>
+      </section>
     </main>
   </body>
 </html>

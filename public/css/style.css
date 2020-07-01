@@ -1,11 +1,95 @@
+/* BASE PAGE STYLES */
+
 html {
+  background: transparent;
+  box-sizing: border-box;
+  color: hsl(0, 0%, 100%);
+  font-family: Oxygen, sans-serif;
+  height: 100%;
+  letter-spacing: 1px;
+}
+
+body {
   background: hsl(0, 0%, 11%);
   background: linear-gradient(120deg, hsl(0, 0%, 11%), hsl(270, 18%, 19%)) fixed;
+  min-height: 100%;
+  overscroll-behavior: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+header {
+  margin: 0 auto;
+  max-width: 600px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 5px 0 6rem;
+}
+
+section {
+  padding-top: 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  box-sizing: border-box;
+  margin-top: 0;
+}
+
+/* BASE ELEMENT STYLES */
+
+div,
+header,
+main,
+section,
+p,
+pre,
+hr {
+  box-sizing: border-box;
 }
 
 p {
-  line-height: 24px;
-  margin: 15px 0 10px;
+  line-height: 1.5rem;
+  margin: 20px 0;
+}
+
+code,
+samp {
+  background: hsl(270, 100%, 95%);
+  border-radius: 2px;
+  color: hsl(270, 100%, 30%);
+  font-family: "Oxygen Mono", monospace;
+  padding: 2px;
+  white-space: nowrap;
+}
+
+pre {
+  background: hsl(270, 100%, 95%);
+  border-radius: 4px;
+  overflow-x: auto;
+  padding: 12px;
+}
+
+pre code,
+pre samp {
+  background: transparent;
+  border-radius: 0;
+  line-height: 1.3rem;
+  white-space: pre;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px solid hsl(0, 0%, 60%);
 }
 
 a,
@@ -14,66 +98,45 @@ a:hover,
 a:active,
 a:focus {
   color: hsl(270, 100%, 85%);
+  text-decoration: none;
 }
 
-code,
-pre {
-  background: hsl(270, 100%, 95%);
-  color: hsl(270, 100%, 30%);
+a:hover {
+  text-decoration: underline;
 }
 
-hr {
-  border-bottom: 1px solid hsla(0, 0%, 100%, 0.6);
+a:focus,
+button:focus,
+details:focus,
+input:focus,
+select:focus,
+textarea:focus,
+[tabindex]:focus {
+  box-shadow: 0 0 3px 3px hsla(203, 95%, 62%, 0.8);
+  outline: none;
 }
 
-header {
-  margin: auto;
-  max-width: 600px;
-  padding-top: 40px;
-}
+/* SPECIFIC ELEMENT STYLES */
 
 h1 {
-  font-size: 1.7rem;
   letter-spacing: 4px;
-  line-height: 1.2;
-  text-align: center;
 }
 
 h2 {
-  font-size: 1rem;
-  line-height: 1.2;
-  padding: 18px 0;
+  letter-spacing: 3px;
   text-align: center;
-}
-
-main {
-  margin: auto;
-  max-width: 600px;
-  padding-bottom: 80px;
 }
 
 h3 {
-  font-size: 1.4rem;
-  letter-spacing: 3px;
-  line-height: 1.2;
-  padding: 30px 0 10px;
-  text-align: center;
-}
-
-h4 {
-  font-size: 1.2rem;
   letter-spacing: 2px;
-  line-height: 1.2;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
-@media only screen and (min-width: 570px) {
+/* MEDIA QUERIES */
 
-  h1 {
-    font-size: 2rem;
-  }
+@media only screen and (max-width: 500px) {
 
-  h3 {
-    font-size: 1.6rem;
+  body {
+    font-size: 0.9rem;
   }
 }

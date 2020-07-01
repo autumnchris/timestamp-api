@@ -9,6 +9,7 @@ My project for the [Timestamp Microservice challenge](https://learn.freecodecamp
 * [EJS](https://ejs.co)
 * CSS3
 * [Moment.js](https://momentjs.com)
+* [Normalize.css](https://necolas.github.io/normalize.css)
 * [Google Fonts](https://fonts.google.com)
 
 ## Demo
