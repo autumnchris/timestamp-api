@@ -58,7 +58,7 @@ hr {
 }
 
 p {
-  line-height: 1.5rem;
+  line-height: 1.5;
   margin: 20px 0;
 }
 
@@ -83,7 +83,7 @@ pre code,
 pre samp {
   background: transparent;
   border-radius: 0;
-  line-height: 1.3rem;
+  line-height: 1.3;
   white-space: pre;
 }
 
@@ -130,6 +130,10 @@ h2 {
 h3 {
   letter-spacing: 2px;
   padding-top: 20px;
+}
+
+.subsection {
+  padding-bottom: 15px;
 }
 
 /* MEDIA QUERIES */
