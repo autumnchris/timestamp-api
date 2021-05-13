@@ -2,6 +2,7 @@
 
 html {
   background: transparent;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: hsl(0, 0%, 100%);
   font-family: Oxygen, sans-serif;
@@ -11,8 +12,11 @@ html {
 
 body {
   background: hsl(0, 0%, 11%);
+  background: -o-linear-gradient(330deg, hsl(0, 0%, 11%), hsl(270, 18%, 19%)) fixed;
   background: linear-gradient(120deg, hsl(0, 0%, 11%), hsl(270, 18%, 19%)) fixed;
+  font-size: 0.9rem;
   min-height: 100%;
+  -ms-scroll-chaining: none;
   overscroll-behavior: none;
   padding: 0 20px;
   position: relative;
@@ -41,6 +45,7 @@ h3,
 h4,
 h5,
 h6 {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-top: 0;
 }
@@ -54,6 +59,7 @@ section,
 p,
 pre,
 hr {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -112,6 +118,7 @@ input:focus,
 select:focus,
 textarea:focus,
 [tabindex]:focus {
+  -webkit-box-shadow: 0 0 3px 3px hsla(203, 95%, 62%, 0.8);
   box-shadow: 0 0 3px 3px hsla(203, 95%, 62%, 0.8);
   outline: none;
 }
@@ -138,9 +145,9 @@ h3 {
 
 /* MEDIA QUERIES */
 
-@media only screen and (max-width: 500px) {
+@media all and (min-width: 500px) {
 
   body {
-    font-size: 0.9rem;
+    font-size: inherit;
   }
 }
