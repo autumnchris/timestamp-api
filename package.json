@@ -1,7 +1,7 @@
 {
   "name": "timestamp-api",
   "version": "1.0.0",
-  "description": "My project for the Timestamp Microservice challenge as part of the curriculum for the Apis and Microservices Certification on freeCodeCamp.",
+  "description": "An Express.js API that converts a given calendar date to its affiliated timestamp and vice versa.",
   "main": "app.js",
   "scripts": {
     "dev": "nodemon app",
