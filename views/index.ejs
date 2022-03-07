@@ -1,38 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-  <%- include('./partials/head') -%>
-  <body>
-    <header>
-      <h1>Timestamp API</h1>
-      <p>Created by <a href="https://autumnchris.github.io/portfolio" target="_blank">Autumn Bullard</a> &copy; <%= new Date().getFullYear(); %></p>
-    </header>
-    <main>
-      <p>An API that converts a given calendar date to its affiliated timestamp and vice versa.</p>
-      <p>View the <a href="https://github.com/autumnchris/timestamp-api" target="_blank">source code</a> for this project.</p>
-      <hr>
-      <section>
-        <h2>Example Usages</h2>
-        <div class="subsection">
-          <h3>Get the Current Date</h3>
-          <p>To get the data for the current date, go to the route:</p>
-          <pre><code>/api/timestamp</code></pre>
-        </div>
-        <div class="subsection">
-          <h3>Get Other Dates</h3>
-          <p>To get the data for a specific date, add a parameter of a natural language date or a unix timestamp to the set route. Natural language dates must be written in <code>YYYY-MM-DD</code> formatting such as:</p>
-          <pre><code>/api/timestamp/2018-10-31</code></pre>
-          <p>Unix timestamps must be a valid set of numbers such as:</p>
-          <pre><code>/api/timestamp/1540944000000</code></pre>
-        <div>
-      </section>
-      <section>
-        <h2>Example Output</h2>
-        <p>A successful output should return a unix timestamp and its associated UTC date.</p>
-        <pre><samp>{
-  "unix": 1540944000000,
-  "utc": "Wed, 31 Oct 2018 00:00:00 GMT"
+<header>
+  <h1>Timestamp API</h1>
+  <p>Created by <a href="https://autumnchris.github.io/portfolio" target="_blank">Autumn Bullard</a> &copy; <%= new Date().getFullYear() %></p>
+</header>
+<main>
+  <p>An API that converts a given calendar date to its affiliated timestamp and vice versa.</p>
+  <p>View the <a href="https://github.com/autumnchris/timestamp-api" target="_blank">source code</a> for this project.</p>
+  <hr>
+  <section>
+    <h2>Example Usages</h2>
+    <div class="subsection">
+      <h3>Get the Current Date</h3>
+      <p>To get the data for the current date, go to the route:</p>
+      <pre><code>/api/timestamp</code></pre>
+    </div>
+    <div class="subsection">
+      <h3>Get Other Dates</h3>
+      <p>To get the data for a specific date, add a parameter of a natural language date or a unix timestamp to the set route. Natural language dates must be written in <code>YYYY-MM-DD</code> formatting such as:</p>
+      <pre><code>/api/timestamp/2018-10-31</code></pre>
+      <p>Unix timestamps must be a valid set of numbers such as:</p>
+      <pre><code>/api/timestamp/1540944000000</code></pre>
+    <div>
+  </section>
+  <section>
+    <h2>Example Output</h2>
+    <p>A successful output should return a unix timestamp and its associated UTC date.</p>
+    <pre><samp>{
+"unix": 1540944000000,
+"utc": "Wed, 31 Oct 2018 00:00:00 GMT"
 }</samp></pre>
-      </section>
-    </main>
-  </body>
-</html>
+  </section>
+</main>
