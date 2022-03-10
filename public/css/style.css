@@ -1,11 +1,14 @@
 /* BASE PAGE STYLES */
 
-html {
-  background: transparent;
+* {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  color: hsl(0, 0%, 100%);
+}
+
+html {
+  background: transparent;
   font-family: Oxygen, sans-serif;
+  font-size: 0.9rem;
   height: 100%;
   letter-spacing: 1px;
 }
@@ -14,7 +17,7 @@ body {
   background: hsl(0, 0%, 11%);
   background: -o-linear-gradient(330deg, hsl(0, 0%, 11%), hsl(270, 18%, 19%)) fixed;
   background: linear-gradient(120deg, hsl(0, 0%, 11%), hsl(270, 18%, 19%)) fixed;
-  font-size: 0.9rem;
+  color: hsl(0, 0%, 100%);
   min-height: 100%;
   -ms-scroll-chaining: none;
   overscroll-behavior: none;
@@ -32,11 +35,7 @@ header {
 main {
   margin: 0 auto;
   max-width: 600px;
-  padding: 5px 0 6rem;
-}
-
-section {
-  padding-top: 30px;
+  padding-bottom: 6rem;
 }
 
 h1,
@@ -45,57 +44,25 @@ h3,
 h4,
 h5,
 h6 {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   margin-top: 0;
 }
 
-/* BASE ELEMENT STYLES */
-
-div,
-header,
-main,
-section,
-p,
-pre,
-hr {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+h1 {
+  letter-spacing: 4px;
 }
 
-p {
-  line-height: 1.5;
-  margin: 20px 0;
+h2 {
+  letter-spacing: 3px;
+  text-align: center;
 }
 
-code,
-samp {
-  background: hsl(270, 100%, 95%);
-  border-radius: 2px;
-  color: hsl(270, 100%, 30%);
-  font-family: "Oxygen Mono", monospace;
-  padding: 2px;
-  white-space: nowrap;
+h3 {
+  letter-spacing: 2px;
+  padding-top: 20px;
 }
 
-pre {
-  background: hsl(270, 100%, 95%);
-  border-radius: 4px;
-  overflow-x: auto;
-  padding: 12px;
-}
-
-pre code,
-pre samp {
-  background: transparent;
-  border-radius: 0;
-  line-height: 1.3;
-  white-space: pre;
-}
-
-hr {
-  border: 0;
-  border-bottom: 1px solid hsl(0, 0%, 60%);
+section {
+  padding-top: 30px;
 }
 
 a,
@@ -123,31 +90,56 @@ textarea:focus,
   outline: none;
 }
 
-/* SPECIFIC ELEMENT STYLES */
-
-h1 {
-  letter-spacing: 4px;
+p {
+  line-height: 1.5;
+  margin: 20px 0;
 }
 
-h2 {
-  letter-spacing: 3px;
-  text-align: center;
+hr {
+  border: 0;
+  border-bottom: 1px solid hsl(0, 0%, 60%);
 }
 
-h3 {
-  letter-spacing: 2px;
-  padding-top: 20px;
+.api-description {
+  padding-top: 5px;
+  text-align: left;
 }
 
 .subsection {
   padding-bottom: 15px;
 }
 
+/* Code styles */
+code,
+samp {
+  background: hsl(270, 100%, 95%);
+  border-radius: 2px;
+  color: hsl(270, 100%, 30%);
+  font-family: "Oxygen Mono", monospace;
+  padding: 2px;
+  white-space: nowrap;
+}
+
+pre {
+  background: hsl(270, 100%, 95%);
+  border-radius: 4px;
+  overflow-x: auto;
+  padding: 12px;
+}
+
+pre code,
+pre samp {
+  background: transparent;
+  border-radius: 0;
+  line-height: 1.3;
+  white-space: pre;
+}
+
 /* MEDIA QUERIES */
 
 @media all and (min-width: 500px) {
 
-  body {
+  html {
     font-size: inherit;
   }
 }

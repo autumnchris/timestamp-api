@@ -17,7 +17,7 @@ Inspired by the [Timestamp Microservice challenge](https://learn.freecodecamp.or
 
 ## Demo
 
-View project demo at [https://autumnchris-timestamp.herokuapp.com](https://autumnchris-timestamp.herokuapp.com).
+View project demo at [https://autumnchris-timestamp.herokuapp.com/api](https://autumnchris-timestamp.herokuapp.com/api).
 
 ## Instructions
 
