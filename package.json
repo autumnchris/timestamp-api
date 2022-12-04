@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/autumnchris/timestamp-api/issues"
   },
-  "homepage": "https://autumnchris-timestamp-api.onrender.com",
+  "homepage": "https://autumnchris-timestamp-api.onrender.com/api",
   "dependencies": {
     "ejs": "^3.0.1",
     "express": "^4.16.2",
