@@ -11,8 +11,10 @@ Inspired by the [Timestamp Microservice challenge](https://learn.freecodecamp.or
 * [EJS](https://ejs.co)
 * CSS3
 * [Moment.js](https://momentjs.com)
+* JavaScript
 * [Normalize.css](https://necolas.github.io/normalize.css)
 * [Google Fonts](https://fonts.google.com)
+* [Font Awesome](https://fontawesome.com)
 * [nodemon](https://nodemon.io)
 
 ## Demo
