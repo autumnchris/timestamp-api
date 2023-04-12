@@ -35,9 +35,17 @@
 </main>
 <script>
   function events() {
-    document.querySelector('.copy-button.api-current').addEventListener('click', () => navigator.clipboard.writeText('https://autumnchris-timestamp-api.onrender.com/api/timestamp'));
-    document.querySelector('.copy-button.api-date').addEventListener('click', () => navigator.clipboard.writeText('https://autumnchris-timestamp-api.onrender.com/api/timestamp/2018-10-31'));
-    document.querySelector('.copy-button.api-timestamp').addEventListener('click', () => navigator.clipboard.writeText('https://autumnchris-timestamp-api.onrender.com/api/timestamp/1540944000000'));
+    document.addEventListener('click', event => {
+      const element = event.target;
+      element.matches('.copy-button.api-current') ? copyText('https://autumnchris-timestamp-api.onrender.com/api/timestamp') : null;
+      element.matches('.copy-button.api-date') ? copyText('https://autumnchris-timestamp-api.onrender.com/api/timestamp/2018-10-31') : null;
+      element.matches('.copy-button.api-timestamp') ? copyText('https://autumnchris-timestamp-api.onrender.com/api/timestamp/1540944000000') : null;
+    });
   }
+
+  function copyText(text) {
+    navigator.clipboard.writeText(text);
+  }
+
   events();
 </script>
