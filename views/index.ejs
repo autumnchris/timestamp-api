@@ -33,19 +33,3 @@
 }</samp></pre>
   </section>
 </main>
-<script>
-  function events() {
-    document.addEventListener('click', event => {
-      const element = event.target;
-      element.matches('.copy-button.api-current') ? copyText('https://autumnchris-timestamp-api.onrender.com/api/timestamp') : null;
-      element.matches('.copy-button.api-date') ? copyText('https://autumnchris-timestamp-api.onrender.com/api/timestamp/2018-10-31') : null;
-      element.matches('.copy-button.api-timestamp') ? copyText('https://autumnchris-timestamp-api.onrender.com/api/timestamp/1540944000000') : null;
-    });
-  }
-
-  function copyText(text) {
-    navigator.clipboard.writeText(text);
-  }
-
-  events();
-</script>
