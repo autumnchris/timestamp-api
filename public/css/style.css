@@ -123,8 +123,14 @@ samp {
 pre {
   background: hsl(270, 100%, 95%);
   border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   overflow-x: auto;
   padding: 12px;
@@ -150,10 +156,16 @@ pre .api-link {
 .button:hover,
 .button:active,
 .button:focus {
-  background: transparent;
+  background: hsl(270, 100%, 85%);
   border: 0;
-  border-radius: 3px;
+  border-radius: 4px;
+  color: hsl(270, 100%, 25%);
   cursor: pointer;
+}
+
+.button:hover {
+  background: hsl(270, 100%, 82%);
+  text-decoration: none;
 }
 
 .copy-button,
@@ -161,15 +173,14 @@ pre .api-link {
 .copy-button:hover,
 .copy-button:active,
 .copy-button:focus {
-  background: hsl(270, 100%, 85%);
-  color: hsl(270, 100%, 30%);
   height: 30px;
   margin-left: 10px;
   width: 30px;
 }
 
-.copy-button:hover {
-  background: hsl(270, 100%, 82%);
+.copy-icon {
+  pointer-events: none;
+  vertical-align: text-bottom;
 }
 
 /* MEDIA QUERIES */
