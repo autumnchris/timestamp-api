@@ -8,10 +8,13 @@ Inspired by the [Timestamp Microservice challenge](https://learn.freecodecamp.or
 
 ## Built With
 * [Express.js](https://expressjs.com)
+* [Node.js](https://nodejs.org/en)
 * [EJS](https://ejs.co)
+* HTML5
 * CSS3
-* [Moment.js](https://momentjs.com)
 * JavaScript
+* Vanilla JS
+* [Moment.js](https://momentjs.com)
 * [Normalize.css](https://necolas.github.io/normalize.css)
 * [Google Fonts](https://fonts.google.com)
 * [Font Awesome](https://fontawesome.com)
