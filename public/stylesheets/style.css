@@ -1,3 +1,18 @@
+@font-face {
+  font-family: Oxygen;
+  src: url(../assets/fonts/Oxygen-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Oxygen Mono";
+  src: url(../assets/fonts/OxygenMono-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  src: url(../assets/fonts/fa-regular-400.ttf);
+}
+
 /* BASE PAGE STYLES */
 
 * {
