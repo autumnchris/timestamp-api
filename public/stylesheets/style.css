@@ -188,6 +188,15 @@ pre .api-link {
 .copy-button:hover,
 .copy-button:active,
 .copy-button:focus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   height: 30px;
   margin-left: 10px;
   width: 30px;
@@ -195,7 +204,6 @@ pre .api-link {
 
 .copy-icon {
   pointer-events: none;
-  vertical-align: text-bottom;
 }
 
 /* MEDIA QUERIES */
