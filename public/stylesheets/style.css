@@ -176,11 +176,11 @@ pre .api-link {
   border-radius: 4px;
   color: hsl(270, 100%, 25%);
   cursor: pointer;
+  text-decoration: none;
 }
 
 .button:hover {
   background: hsl(270, 100%, 82%);
-  text-decoration: none;
 }
 
 .copy-button,
